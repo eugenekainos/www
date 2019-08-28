@@ -1,0 +1,31 @@
+.content {
+  grid-column: content-start / content-end;
+  min-height: 80vh;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-caption {
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+
+}
+
+.profile-image {
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 4.5rem);
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+

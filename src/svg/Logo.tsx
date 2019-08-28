@@ -1,0 +1,90 @@
+import classNames from 'classnames';
+import * as React from 'react';
+import { SvgProps } from './Programs';
+
+export const LogoSvg = (props: SvgProps) => (
+    <svg
+        className={classNames(props.className)}
+        width="580"
+        height="400"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <g>
+            <title>background</title>
+            <rect
+                fill="#fff"
+                id="canvas_background"
+                height="402"
+                width="582"
+                y="-1"
+                x="-1"
+            />
+            <g
+                display="none"
+                overflow="visible"
+                y="0"
+                x="0"
+                height="100%"
+                width="100%"
+                id="canvasGrid"
+            >
+                <rect
+                    fill="url(#gridpattern)"
+                    strokeWidth="0"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                />
+            </g>
+        </g>
+        <g>
+            <title>Layer 1</title>
+            <line
+                stroke="#000"
+                id="svg_1"
+                y2="99.4375"
+                x2="331.019749"
+                y1="99.4375"
+                x1="133.369567"
+                strokeWidth="3.5"
+                fill="none"
+            />
+            <line
+                id="svg_2"
+                y2="292.927666"
+                x2="329.289338"
+                y1="97.927666"
+                x1="329.289338"
+                fillOpacity="null"
+                strokeOpacity="null"
+                strokeWidth="3.5"
+                stroke="#000"
+                fill="none"
+            />
+            <line
+                transform="rotate(89.95211791992188 135.09619140624997,152.52957153320312) "
+                stroke="#000"
+                id="svg_4"
+                y2="152.529575"
+                x2="189.683162"
+                y1="152.529575"
+                x1="80.509244"
+                strokeWidth="3.5"
+                fill="none"
+            />
+            <line
+                transform="rotate(179.84889221191406 276.14556884765625,291.33770751953125) "
+                stroke="#000"
+                id="svg_5"
+                y2="291.337705"
+                x2="330.732514"
+                y1="291.337705"
+                x1="221.558596"
+                strokeWidth="3.5"
+                fill="none"
+            />
+            <text>D</text>
+        </g>
+    </svg>
+);

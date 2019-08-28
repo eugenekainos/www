@@ -1,0 +1,19 @@
+@import "../styles/main";
+
+.container {
+  display: grid;
+  grid-template-columns: [header-start] minmax(4rem, 1fr) [content-start] repeat(
+                  6,
+                  [col-start] minmax(4rem, 1fr) [col-end]
+  ) [content-end] minmax(4rem, 1fr) [header-end];
+  grid-template-rows: 6rem  minmax(5vh, 15rem) minmax(65vh, max-content) max-content;
+
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 13vh minmax(20vh, 20rem) minmax(65vh, max-content) max-content;
+  }
+}
+
+.content {
+  min-height: 80vh;
+}

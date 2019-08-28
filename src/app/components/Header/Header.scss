@@ -1,0 +1,68 @@
+
+.logo-img {
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.header {
+  grid-column: header-start / header-end;
+  display: grid;
+  grid-template-columns: 30% minmax(max-content, 1fr) 30%;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem 1.5rem;
+  }
+
+  &-logo {
+    @media only screen and (max-width: 800px) {
+      grid-row: 1 / 2;
+      grid-column: 1 / span 2;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: inherit;
+      font-size: inherit;
+      font-family: inherit;
+    }
+  }
+
+  &-social {
+    @media only screen and (max-width: 800px) {
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+    }
+
+    &-item {
+      margin: 0 1rem;
+      fill: rgba(#000, 0.7);
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 0;
+    }
+  }
+}
+
+.header-primary {
+  font-family: "Lato", sans-serif;
+  color: rgba(#000, 0.8);
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.header-secondary {
+  margin-top: 1rem;
+  font-family: "Lato", sans-serif;
+  color: rgba(#000, 0.7);
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: lowercase;
+}
