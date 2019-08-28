@@ -99,7 +99,7 @@
 }
 
 .arrow {
-    font-size: 7rem;
+    font-size: 6rem;
     text-align: center;
     cursor: pointer;
 
@@ -109,7 +109,8 @@
     outline: none;
 
     background-color: rgba(#fff, 0.5);
-    width: 10vh;
+
+    width: 9vh;
     height: 15rem;
 
     transition: background-color 0.5s ease-in-out;

@@ -35,6 +35,10 @@ export const ImageGallery = ({
         }
     };
 
+    const renderNextImage = (e: React.BaseSyntheticEvent) => {
+        console.log(e.target);
+    };
+
     return (
         <div
             onClick={handleClickOutside}
@@ -52,7 +56,7 @@ export const ImageGallery = ({
                     ❮
                 </button>
                 <button
-                    onClick={console.log}
+                    onClick={renderNextImage}
                     className={classNames(styles.arrow, styles.arrowRight)}
                 >
                     ❯
@@ -60,7 +64,7 @@ export const ImageGallery = ({
                 <button onClick={handleClose} className={styles.closeBtn}>
                     &times;
                 </button>
-                <ImageGalleryFooter id={project.id} handleClick={console.log} />
+                <ImageGalleryFooter id={project.id} handleClick={renderNextImage} />
             </div>
         </div>
     );
